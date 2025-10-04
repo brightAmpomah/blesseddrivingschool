@@ -184,4 +184,15 @@ footer {
     .hero {
         padding: 6rem 0;
     }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      display: none;
+    }
+    .cta-strip{
+      padding: 1.2rem;
+      text-align: center;
+    }
+    .cta-btn{
+      flex-direction: column;
+    }
 }
