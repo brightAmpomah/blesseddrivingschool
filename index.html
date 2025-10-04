@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blessed Driving School - Lean to Drive</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Lobster&family=Story+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+      <div class="container">
+        <a
+          href="#"
+          class="navbar-brand d-flex text-danger align-items-center gap-2"
+        >
+          <i class="bi bi-car-front-fill"></i>
+          <span class="fw-semibold">Blessed Driving School</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex ms-3">
+            <a
+              href="#pricing"
+              data-bs-toggle="modal"
+              data-bs-target="#pricingModal"
+              class="btn btn-outline-dark me-2"
+              >View Pricing</a
+            >
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#bookingModal"
+              id="bookNowBtn"
+            >
+              Book a Lesson
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <h1 class="display-5 fw-bold">Learn to Drive with confidence</h1>
+              <p class="lead mt-3">
+                Friendly instructors, modern vehicles, and a proven curriculum
+                designed to help you pass on the first try.
+              </p>
+
+              <div class="mt-4 d-flex gap-2">
+                <button
+                  class="btn btn-primary btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                  id="heroBookBtn"
+                >
+                  Book a Lesson
+                </button>
+                <a
+                  href="#schedules"
+                  data-bs-toggle="modal"
+                  data-bs-target="#scheduleModal"
+                  class="btn btn-outline-light btn-lg"
+                  >See Schedules</a
+                >
+              </div>
+
+              <ul class="mt-4 opacity-85 small">
+                <li class="mb-2">
+                  <i class="bi bi-check2-circle text-success"></i> 98%
+                  first-time pass rate
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check2-circle text-success"></i> Flexible
+                  hours
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check2-circle text-success"></i> Pick-ups &
+                  drop-off available
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block">
+              <div class="rounded-card overflow-hidden">
+                <img src="assert/drive-hero.jpg" alt="driving" class="fixed" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h3 class="fw-bold">Our Services</h3>
+            <p class="text-muted">Programs tailored for every skill level.</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="p-3 rounded-card h-100">
+                <div class="d-flex gap-3 align-items-start">
+                  <div class="service-dot mt-1"></div>
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Advance Training</h6>
+                    <p class="mb-0 text-muted small">
+                      Maneuvers, highway driving, and complex traffic scenarios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="p-3 rounded-card h-100">
+                <div class="d-flex gap-3 align-items-start">
+                  <div class="service-dot mt-1"></div>
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Defensive Driving</h6>
+                    <p class="mb-0 text-muted small">
+                      Anticipate risks and react safely with confidence.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="p-3 rounded-card h-100">
+                <div class="d-flex gap-3 align-items-start">
+                  <div class="service-dot mt-1"></div>
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Test Preparation</h6>
+                    <p class="mb-0 text-muted small">
+                      Mock text and guidance to ace the DVLA road test.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="p-3 rounded-card h-100">
+                <div class="d-flex gap-3 align-items-start">
+                  <div class="service-dot mt-1"></div>
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Refresher Courses</h6>
+                    <p class="mb-0 text-muted small">
+                      Return to the road with up-to-date skills and comfort.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="p-3 rounded-card h-100">
+                <div class="d-flex gap-3 align-items-start">
+                  <div class="service-dot mt-1"></div>
+                  <div>
+                    <h6 class="mb-1 fw-semibold">Group & Corporate</h6>
+                    <p class="mb-0 text-muted small">
+                      Custom training for teams and organizations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-5" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="rounded-card p-4">
+                <h4 class="fw-bold">About Us</h4>
+                <p class="text-muted mb-0">
+                  At Blessed Drive, we belived learning to drive should be safe,
+                  simple, and empowering. Our certified instructors brings years
+                  of experience, a calm approach, and modern teaching methods We
+                  focus on safety-first techniques and real-world practice to
+                  ensure every student feels confident behind the wheel.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 d-none text-center d-lg-block">
+              <img
+                src="assert/owner.jpg"
+                style="width: 150px; height: 150px"
+                alt="Owner of Blessed Drive School"
+                class="img-fluid rounded-circle fixed shadow-sm"
+              />
+              <p class="lead fw-bold mt-3">Name</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="py-5 testimonials">
+        <div class="container text-center">
+          <h2 class="mb-4">What Our Customers Say</h2>
+          <div
+            id="testimonialCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card carousel-card text-center shadow-sm mx-auto">
+                   <div class="mb-2 text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      
+                    </div>
+                  <div class="card-body">
+                      <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                          <img src="assert/student1.jpg" alt="student 1" class="rounded-circle mb-3" style="width: 50px; height: 50px;">
+                          <h5 class="fw-bold mb-0">Edward Addae</h5>
+                      </div>
+                      <p class="text-muted alignText">
+                        I'm currently taking lessons with Bleesed Driving School, Kasoa branch and felt compelled to write a review now because my experience has been so positive.
+                        The instructor's are fantastic.
+                      </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card p-2 carousel-card shadow-sm text-center mx-auto">
+                   <div class="mb-2 text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      
+                    </div>
+                  <div class="card-body">
+                      <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                          <img src="assert/student1.jpg" alt="student 1" class="rounded-circle mb-3" style="width: 50px; height: 50px;">
+                          <h5 class="fw-bold mb-0">Patience Atta-Nyarko</h5>
+                      </div>
+                      <p class="text-muted">
+                        They take time to teach you very well
+                      </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card p-2 carousel-card shadow-sm text-center mx-auto">
+                   <div class="mb-2 text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      
+                    </div>
+                  <div class="card-body">
+                      <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                          <img src="assert/student1.jpg" alt="student 1" class="rounded-circle mb-3" style="width: 50px; height: 50px;">
+                          <h5 class="fw-bold mb-0">DeMelek Doe</h5>
+                      </div>
+                      <p class="text-muted">
+                        "I have enquired from driving institutions and found blessed driving
+                         school to be the best among all. I will recommend BLESSED DRIVING SCHOOL to you as THE BEST".
+                      </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+
+            </div>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators position-static mt-5">
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 cta">
+        <div class="container">
+          <div
+            class="cta-strip d-flex justify-content-between align-items-center"
+          >
+            <div>
+              <h5 class="fw-bold mb-1">Ready to hit the road?</h5>
+              <p class="mb-0 small">
+                Join thousand of confident new drivers. Book your first lesson
+                today.
+              </p>
+            </div>
+            <div class="d-flex gap-2">
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bookingModal"
+                id="catBook"
+              >
+                Book a Lesson
+              </button>
+              <a
+                href="#pricing"
+                data-bs-toggle="modal"
+                data-bs-target="#pricingModal"
+                class="btn btn-outline-dark"
+                >View Pricing</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h3 class="fw-bold">Contact Us</h3>
+            <p class="text-muted">
+              We'd love to help you start driving confidently.
+            </p>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-6">
+              <div class="contact-card">
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <div class="coolinput">
+                      <label for="contactName" class="text form-label"
+                        >Name:</label
+                      >
+                      <input
+                        type="text"
+                        placeholder="Write here..."
+                        id="contactName"
+                        name="input"
+                        class="input form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="coolinput">
+                      <label for="contactEmail" class="text form-label"
+                        >Email:</label
+                      >
+                      <input
+                        type="email"
+                        placeholder="Email Address"
+                        id="contactEmail"
+                        name="input"
+                        class="input form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="coolinput">
+                      <label for="contactPhone" class="text form-label"
+                        >Phone:</label
+                      >
+                      <input
+                        type="tel"
+                        placeholder="Mobile Number"
+                        id="contactPhone"
+                        name="input"
+                        class="input form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="coolinput">
+                      <label for="contactName" class="text form-label"
+                        >Message:</label
+                      >
+                      <textarea
+                        name="input"
+                        id="contactMessage"
+                        class="input form-control"
+                        rows="4"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="d-grid">
+                    <button
+                      type="submit"
+                      class="btn btn-primary"
+                      id="contactSubmitBtn"
+                    >
+                      <span
+                        class="spinner-border spinner-border-sm me-2 d-none"
+                        id="contactSpinner"
+                        role="status"
+                        aria-hidden="true"
+                      >
+                      </span>
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+                <div id="contactAlert" class="mt-3"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="contact-card">
+                <div class="mb-3">
+                  <strong>(+233) 244 667 475</strong>
+                  <small class="text-muted"
+                    >Monday - Friday, 09:00am - 05:00pm</small
+                  >
+                </div>
+                <div class="mb-3">
+                  <strong>info.blesseddrivingschool@gmail.com</strong>
+                  <small class="text-muted">We reply within 24 hours</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white py-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <small>&copy; 2025 Blessed Driving School. All rights reserved.</small>
+        <div>
+          <a href="#" class="me-3"><i class="bi fs-4 bi-facebook"></i></a>
+          <a href="#" class="me-3 text-dark"
+            ><i class="bi fs-4 bi-tiktok"></i
+          ></a>
+          <a href="#" class="me-3"><i class="bi fs-4 bi-twitter"></i></a>
+          <a href="#" class="me-3 text-danger"
+            ><i class="bi fs-4 bi-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.35.0/dist/umd/supabase.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookingModalLabel">Book a Lesson</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="bookingForm">
+              <input
+                type="text"
+                class="form-control mb-2"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="text"
+                class="form-control mb-2"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+              <select class="form-control mb-2" name="service" required>
+                <option value="">Select Service</option>
+                <option>Beginner Lessons</option>
+                <option>Advanced Training</option>
+                <option>Defensive Driving</option>
+                <option>Test Preparation</option>
+                <option>Refresher Courses</option>
+                <option>Group & Corporate</option>
+              </select>
+              <button type="submit" class="btn btn-primary w-100">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Modal -->
+    <div
+      class="modal fade"
+      id="pricingModal"
+      tabindex="-1"
+      aria-labelledby="pricingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow-lg">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="pricingModalLabel">
+              Lesson Courses Pricing
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body">
+                    <h6 class="fw-bold">Three Weeks Intensive</h6>
+                    <p class="lead">Automatic - GH₵ 1,600</p>
+                    <p class="lead">Manual - GH₵ 1,800</p>
+                    <hr />
+                    <p class="text-muted">
+                      No ideas about driving but needs driving skills for
+                      immediate assignment.
+                    </p>
+                    <p class="text-muted">
+                      30 hours packed practicals and theory lessons
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body">
+                    <h6 class="fw-bold">Six Weeks Special</h6>
+                    <p class="lead">Automatic - GH₵ 1,500</p>
+                    <p class="lead">Manual - GH₵ 1,700</p>
+                    <hr />
+                    <p class="text-muted">
+                      Designed for student who have no knowledge about driving
+                      but want to learning at the shortest time.
+                    </p>
+                    <p class="text-muted">
+                      48 hours packed practicals and theory lessons
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body">
+                    <h6 class="fw-bold">Two Months Normal</h6>
+                    <p class="lead">Automatic - GH₵ 1,400</p>
+                    <p class="lead">Manual - GH₵ 1,600</p>
+                    <hr />
+                    <p class="text-muted">
+                      Designed for fresh people wishing to learn how drive.
+                    </p>
+                    <p class="text-muted">
+                      48 hours packed practicals and theory lessons
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schedule Modal -->
+    <div
+      class="modal fade"
+      id="scheduleModal"
+      tabindex="-1"
+      aria-labelledby="scheduleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow-lg">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="scheduleModalLabel">Lesson Schedule</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-bordered text-center">
+              <thead class="table-light">
+                <tr>
+                  <th>Day</th>
+                  <th>Theory</th>
+                  <th>Morning Practicals</th>
+                  <th>Afternoon Practicals</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mondays</td>
+                  <td>-</td>
+                  <td>11am - 1pm</td>
+                  <td>1pm - 3pm</td>
+                </tr>
+                <tr>
+                  <td>Tuesdays</td>
+                  <td>-</td>
+                  <td>11am - 1pm</td>
+                  <td>1pm - 3pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesdays</td>
+                  <td>9am - 11am</td>
+                  <td>11am - 1pm</td>
+                  <td>1pm - 3pm</td>
+                </tr>
+                <tr>
+                  <td>Thurdays</td>
+                  <td>9am - 11am</td>
+                  <td>11am - 1pm</td>
+                  <td>1pm - 3pm</td>
+                </tr>
+                <tr>
+                  <td>Fridays</td>
+                  <td>-</td>
+                  <td>11am - 1pm</td>
+                  <td>1pm - 3pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
