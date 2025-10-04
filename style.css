@@ -184,7 +184,10 @@ footer {
     .hero {
         padding: 6rem 0;
     }
-    .carousel-control-prev-icon,
+}
+
+@media screen and (max-width: 769px) {
+  .carousel-control-prev-icon,
     .carousel-control-next-icon {
       display: none;
     }
