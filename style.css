@@ -13,6 +13,9 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1.visible, h2.visible, h3.visible, h4.visible, h5.visible, h6.visible {
@@ -100,6 +103,9 @@ p {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.9s ease-in-out;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p.show {
@@ -168,6 +174,51 @@ p.show {
 .carousel-card {
   max-width: 500px;
 }
+
+.branch-card{
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.branch-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(circle at top left, rgba(255, 79, 59, 0.3), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+}
+
+.branch-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0, 0.1);
+}
+
+.branch-card:hover::before{
+  opacity: 1;
+}
+
+.branch-card * {
+  position: relative;
+  z-index: 1;
+}
+
+#branches canvas, #branches img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Force readable text inside pricing modal */
+#pricingModal .card-body,
+#pricingModal .card-body * {
+  color: #222 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+
+}
+
 .fixed{
     width: 100%;
     height: 100%;
@@ -187,6 +238,18 @@ footer {
 }
 
 @media screen and (max-width: 769px) {
+  body {
+    text-align: center;
+  }
+  .fixed{
+    margin-top: 2rem;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .socials{
+    margin-top: 1.2rem;
+  }
   .carousel-control-prev-icon,
     .carousel-control-next-icon {
       display: none;
